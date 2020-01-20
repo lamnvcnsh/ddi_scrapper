@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h5>{{ num_drug }} DDIs have been found!</h5>
+
+    <table class="responsive-table striped">
+        <thead>
+        <tr>
+            <th>Targeted Drug</th>
+            <th>Searched Drug</th>
+            <th>Type</th>
+            <th>DDI Content</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for name, type, content, link in ddi_contents %}
+        <tr>
+            <td>{{ search }}</td>
+            <td>{{ name }}</td>
+            <td><a href="{{ link }}" target="_blank">{{ type }}</a></td>
+            <td>{{ content }}</td>
+
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+
+{% endblock content %}
