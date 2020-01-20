@@ -37,7 +37,7 @@ def new_search(request):
             drug_name.append(drug.text)
             base_url = 'https://www.drugs.com{}?professional=1'
             if 'drug-interaction' in drug.a['href']:
-                ddi_url = base_url.format(drug.a['href'])
+                ddi_url = base_url.format(drug.a['href']).lower()
                 ddi_response = requests.get(ddi_url)
                 ddi_link.append(ddi_url)
                 ddi_data = ddi_response.text
