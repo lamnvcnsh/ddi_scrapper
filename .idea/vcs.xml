@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/check-ignore" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/https:/github.com/lamnvcnsh/ddi_scrapper.git" vcs="Git" />
   </component>
 </project>
