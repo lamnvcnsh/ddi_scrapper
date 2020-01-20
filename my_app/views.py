@@ -14,7 +14,7 @@ def home(request):
 def new_search(request):
     search = request.POST.get('search')
     search_list = '-'.join(search.split(" "))
-    models.Search.objects.create(search=search)
+    #models.Search.objects.create(search=search)
 
     drug_name = []
     num_drug = []
