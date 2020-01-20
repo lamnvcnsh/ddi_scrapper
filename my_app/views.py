@@ -35,12 +35,14 @@ def new_search(request):
 
         for drug in drug_links:
             drug_name.append(drug.text)
-            base_url = 'https://www.drugs.com{}?professional=1'
+            base_url = 'https://www.drugs.com{}'
             if 'drug-interaction' in drug.a['href']:
                 ddi_url = base_url.format(drug.a['href']).lower()
                 ddi_response = requests.get(ddi_url)
-                ddi_link.append(ddi_url)
-                ddi_data = ddi_response.text
+                if ddi_response:
+                    final_url = ddi_response.url+"?professional=1"
+                ddi_link.append(final_url)
+                ddi_data = requests.get(final_url).text
                 ddi_soup = BeautifulSoup(ddi_data, features='html.parser')
                 text = ddi_soup.find_all('p')
                 ddi_content.append(text[3].text)
