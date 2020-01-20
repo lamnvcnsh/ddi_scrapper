@@ -45,7 +45,9 @@ dask==2.5.2
 decorator==4.4.0
 defusedxml==0.6.0
 distributed==2.5.2
+dj-database-url==0.5.0
 Django==3.0.2
+django-heroku==0.3.1
 docutils==0.15.2
 entrypoints==0.3
 et-xmlfile==1.0.1
@@ -134,6 +136,7 @@ ply==3.11
 prometheus-client==0.7.1
 prompt-toolkit==2.0.10
 psutil==5.6.3
+psycopg2==2.8.4
 ptyprocess==0.6.0
 py==1.8.0
 pycodestyle==2.5.0
@@ -205,6 +208,7 @@ urllib3==1.24.2
 wcwidth==0.1.7
 webencodings==0.5.1
 Werkzeug==0.16.0
+whitenoise==5.0.1
 widgetsnbextension==3.5.1
 wrapt==1.11.2
 wurlitzer==1.0.3
