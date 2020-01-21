@@ -9,6 +9,7 @@ urlpatterns = [
     path('new_search', views.new_search, name='new_search'),
     path('drugs.com', RedirectView.as_view(url = 'https://www.drugs.com/')),
     path('pgrc', RedirectView.as_view(url='http://pgrc.inje.ac.kr/')),
+    path('spmed', RedirectView.as_view(url='https://www.spmed.kr/')),
 
 ]
 

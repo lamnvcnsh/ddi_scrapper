@@ -14,10 +14,7 @@
 <body>
     <nav>
         <div class="container nav-wrapper">
-          <a href="/" class="brand-logo right">Scraping</a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="pgrc" target="_blank">PGRC</a></li>
-          </ul>
+          <a href="spmed" class="brand-logo right">SPMED</a>
         </div>
     </nav>
     <div class="container">
@@ -26,13 +23,13 @@
     <div class="row">
         <div class="col s12">
             <div class="center">
-                <i class="large material-icons", style="color:#EE6E73">pages</i>
-                <h5>Drug Drug Interaction from <a href="drugs.com" target="_blank">drugs.com</a> website</h5>
+                <a href="spmed" target="_blank"><img src="{%static 'images/spmed_logo_200.png' %}"></a>
+                <p>A demo of getting drug-drug interactions application</p>
+                <p style="color: darkgray">Source: drugs.com</p>
             </div>
         </div>
     </div>
 
-     <h3 style="text-align:center">What drug do you wanna search?</h3>
 
     <form action="{% url 'new_search' %}" class="form-inline" method="post">
         {% csrf_token %}
