@@ -14,11 +14,15 @@
 <body>
     <nav>
         <div class="container nav-wrapper">
-          <a href="spmed" class="brand-logo right">SPMED</a>
+            <a href="spmed" class="brand-logo left">SPMED</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="cyp2d6", target="_blank">CYP2D6 Genotyping</a></li>
+                <li><a href="nat2" target="_blank">NAT2 Genotyping</a></li>
+                <li><a href="var_anno" target="_blank">Variant Interpreter</a></li>
+            </ul>
         </div>
     </nav>
     <div class="container">
-
 
     <div class="row">
         <div class="col s12">
@@ -48,5 +52,6 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="{% static 'js/my_app.js' %}"></script>
 </body>
 </html>
